@@ -1,0 +1,21 @@
+==> Concretized trinity
+ -   jh4ysjk  trinity@2.6.6%gcc@8.1.0 arch=linux-centos7-x86_64
+[+]  fefkju3          ^perl@5.30.1%gcc@8.1.0+cpanm+shared+threads arch=linux-centos7-x86_64
+ -   dl7v6m3      ^blast-plus@2.9.0%gcc@8.1.0+bzip2+freetype+gnutls+jpeg+lzo+openssl+pcre+perl+png+python~static+zlib arch=linux-centos7-x86_64
+[+]  4we7vft          ^python@3.7.6%gcc@8.1.0+bz2+ctypes+dbm~debug+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4~uuid+zlib arch=linux-centos7-x86_64
+ -   fhwzsei      ^bowtie@1.2.3%gcc@8.1.0 patches=47b4519f53cff07c4361f1f73909474ec55ddd7c778b2c293a24ad1a0775bbcd ~tbb arch=linux-centos7-x86_64
+ -   ok2qny3      ^bowtie2@2.3.5.1%gcc@8.1.0 arch=linux-centos7-x86_64
+ -   6i445jw      ^express@1.5.2%gcc@8.1.0 build_type=RelWithDebInfo patches=34dcdcf2c7da0f7e2523619cbd5881c1d2d02a224af3a29ed605469c0761574c arch=linux-centos7-x86_64
+ -   ke52h7i          ^bamtools@2.5.1%gcc@8.1.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64
+ -   orybusz      ^fastqc@0.11.7%gcc@8.1.0 patches=b237b2449aea6f933c1e7f6f28b9b0bff1924a7d7fc0322fa76ab23832d5237c arch=linux-centos7-x86_64
+ -   wbo64du          ^openjdk@1.8.0_202-b08%gcc@8.1.0 arch=linux-centos7-x86_64
+ -   oaatuzt      ^jellyfish@2.2.7%gcc@8.1.0 arch=linux-centos7-x86_64
+ -   i5kmn2j      ^kallisto@0.46.2%gcc@8.1.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64
+ -   ooqe4mn          ^hdf5@1.10.6%gcc@8.1.0+cxx~debug+fortran+hl~mpi+pic+shared~szip~threadsafe arch=linux-centos7-x86_64
+[+]  cdsar7n          ^mpich@3.3.2%gcc@8.1.0 device=ch3 +hydra netmod=tcp +pci pmi=pmi +romio~slurm~verbs+wrapperrpath arch=linux-centos7-x86_64
+ -   aamok5z      ^r@3.6.3%gcc@8.1.0+X~external-lapack~memory_profiling~rmath arch=linux-centos7-x86_64
+ -   3xf4i5e      ^rsem@1.3.1%gcc@8.1.0 arch=linux-centos7-x86_64
+ -   tv7xlc3          ^star@2.7.0e%gcc@8.1.0 arch=linux-centos7-x86_64
+ -   csjmbjs      ^salmon@0.14.1%gcc@8.1.0 build_type=RelWithDebInfo arch=linux-centos7-x86_64
+ -   mod7nse      ^samtools@1.10%gcc@8.1.0 arch=linux-centos7-x86_64
+
