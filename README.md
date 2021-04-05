@@ -76,6 +76,12 @@ spack install
 ```
  
 
+#### x86_64
+
+This environment builds unoptimized software such as anaconda python, gnu parallel, scree, tmux, etc for generic x86_64 processor.
+
+
+
 ## CentOS 7.x software
 
 This just collects the various environments for building software before the CentOS 8.x upgrade. 
