@@ -51,12 +51,30 @@ These environment builds the software stack except the various python and r pack
 *Note*: If you change the path of the installation root, make sure that you change the corresponding path in `compilers/etc/SitePackage.lua`.
 
 ```
-cd spackenv/cent8/envs/avx2
+cd spackenv/cent8/envs/avx2/lusoft
 spack env activate -d .
 spack concretize -f # optional
 spack install
 ```
 
+#### Python and R packages
+
+Rather than building module files for various python and r packages, a single module is created for a filesystem view of all python and r packages respectively. The path to the r filesystem is setup as `R_LIBS_SITE` so that any application such as `trinity` that requires many R packages only need to load the r module. If new packages added to the above environments require a dependent R package, then that dependency should be added to the rpoject environment and concretized. The python environment uses a `concretization: together` and may not provide the same python package as the above software environments. The filesystem views are hardwired as `/share/Apps/py_spack/3.8.6/{avx,avx2,avx512}` and `/share/Apps/r_spack/4.0.3/{avx,avx2,avx512}`.
+
+```
+cd spackenv/cent8/envs/avx/python
+spack env activate -d .
+spack concretize -f # optional
+spack install
+```
+
+```
+cd spackenv/cent8/envs/avx512/rproject
+spack env activate -d .
+spack concretize -f # optional
+spack install
+```
+ 
 
 ## CentOS 7.x software
 
