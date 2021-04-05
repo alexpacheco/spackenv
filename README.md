@@ -2,6 +2,7 @@
 
 This repo contains the environment definitions to deploy site-software on Lehigh University's Research Computing resources via SPACK environments.
 
+
 ## Software deployment for CentOS 8.x
 
 Software is deployed using two Spack installations. 
@@ -28,7 +29,7 @@ The directory `etc/lmod` contains the LMOD configuration to switch between avx, 
 
 This spack installation provides the deployed site-software on Sol and Hawk.
 
-To reproduce this installation, you need to first copy the site configuration files from `lusoft/etc/spack` to your spack install tree. This assumes that SLURM and the compiler environment above is already installed. Edit the `packages.yaml` file to point to the location of slurm (/usr/local), rmda-core (/usr), gcc, intel, cuda, and nvhpc. The file `repo.yaml` is hardwired with  location of the lubio repository and should be changed to your location.
+To reproduce this installation, you need to first copy the site configuration files from `etc/spack` to your spack install tree. This assumes that SLURM and the compiler environment above is already installed. Edit the `packages.yaml` file to point to the location of slurm (/usr/local), rmda-core (/usr), gcc, intel, cuda, and nvhpc. The file `repo.yaml` is hardwired with  location of the lubio repository and should be changed to your location. The directory `templates` contains the template lua file for a few modules as defined in the `modules.yaml` file  and should be copied to the `etc` directory in your spack installation tree. 
 
 On Sol, these files are available at `/share/Apps/lusoft/etc/spack`.
 
