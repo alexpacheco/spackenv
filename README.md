@@ -22,7 +22,7 @@ spack concretize -f # optional
 spack install
 ```
 
-The directory `etc/lmod` contains the lmod configuration to switch between avx, avx2 and avx512 enabled `MODULEPATHS`
+The directory `etc/lmod` contains the LMOD configuration to switch between avx, avx2 and avx512 enabled `MODULEPATHS`
 
 ### LU Software
 
@@ -32,6 +32,30 @@ To reproduce this installation, you need to first copy the site configuration fi
 
 On Sol, these files are available at `/share/Apps/lusoft/etc/spack`.
 
+
+#### Available Environments
+##### solhawk
+
+This environment builds the entire software except the various python and r packages for ivybridge, haswell and skylake_avx512 architectures. This environment also builds the tcl environment modules that is not currently used. This should be build first and any new packages should be added to this environment.
+
+```
+cd spackenv/cent8/envs/solhawk
+spack env activate -d .
+spack concretize -f # optional
+spack install
+```
+
+#### avx/avx2/avx512
+
+These environment builds the software stack except the various python and r packages for ivybridge/haswell/skylake_avx512 architectures. If software in the `solhawk` environment is already built, then these environments are only setting up the installation root for the LMOD module files `/share/Apps/lusoft/share/modules/lmod/{avx,avx2,avx512}`. The only reason these environments exist is due to SPACK's inability to built a architecture based LMOD module tree similar to the TCL module tree. 
+*Note*: If you change the path of the installation root, make sure that you change the corresponding path in `compilers/etc/SitePackage.lua`.
+
+```
+cd spackenv/cent8/envs/avx2
+spack env activate -d .
+spack concretize -f # optional
+spack install
+```
 
 
 ## CentOS 7.x software
