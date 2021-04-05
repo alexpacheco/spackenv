@@ -1,0 +1,140 @@
+modules:
+  enable:
+    -  lmod
+    -  tcl
+  lmod:
+    core_compilers: [gcc@8.3.1]
+    hash_length: 0
+    verbose: false
+    blacklist_implicits: true
+    intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+          OMP_NUM_THREADS: 1
+          MKL_NUM_THREADS: 1
+    mpich%intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    mvapich2%intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    openmpi%intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    r@4.0.3 target=ivybridge:
+      environment:
+        set:
+          R_LIBS_SITE: /share/Apps/R/packages/r-avx/4.0
+    r@4.0.3 target=haswell:
+      environment:
+        set:
+          R_LIBS_SITE: /share/Apps/R/packages/r-avx2/4.0
+    r@4.0.3 target=skylake_avx512:
+      environment:
+        set:
+          R_LIBS_SITE: /share/Apps/R/packages/r-avx512/4.0
+    r%gcc:
+      template: 'rproject.lua'
+    mpich%intel@19.0.3:
+      template: 'intel19.lua'
+    mvapich2%intel@19.0.3:
+      template: 'intel19.lua'
+    openmpi%intel@19.0.3:
+      template: 'intel19.lua'
+    mpich%intel@20.0.3:
+      template: 'intel20.lua'
+    mvapich2%intel@20.0.3:
+      template: 'intel20.lua'
+    openmpi%intel@20.0.3:
+      template: 'intel20.lua'
+    openmolcas:
+      template: 'molcas.lua'
+    anaconda3:
+      environment:
+        set:
+          '{name}_ROOT': '{prefix}'
+      template: 'anaconda.lua'
+    python:
+      template: 'python.lua'
+    hierarchy:
+    - mpi
+    core_specs:
+    - gcc@8.3.1
+    whitelist: []
+    blacklist: []
+    all:
+      conflict: []
+      load: []
+      autoload: 'direct'
+      filter:
+        environment_blacklist: ['CPATH', 'LIBRARY_PATH']
+      suffixes:
+        ^plumed: plumed
+      template: 'scratch.lua'
+    ^python:
+      autoload: 'direct'
+  tcl:
+    hash_length: 7
+    naming_scheme: ${PACKAGE}/${VERSION}/${COMPILERNAME}-${COMPILERVER}
+    blacklist_implicits: true
+    all:
+      conflict:
+        - ${PACKAGE}
+#      suffixes:
+#        ^cuda: cuda
+#        ^plumed: plumed
+#        ^netlib-lapack: netlib
+#        ^openblas: openblas
+#        ^intel-mkl: mkl
+      autoload: 'direct'
+    intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    mpich%intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+      load: []
+    mvapich2%intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    openmpi%intel:
+      environment:
+        set:
+          INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    mpich%intel@19.0.3:
+      load: [intel/19.0.3]
+    mvapich2%intel@19.0.3:
+      load: [intel/19.0.3]
+    openmpi%intel@19.0.3:
+      load: [intel/19.0.3]
+    mpich%intel@20.0.3:
+      load: [intel/20.0.3]
+    mvapich2%intel@20.0.3:
+      load: [intel/20.0.3]
+    openmpi%intel@20.0.3:
+      load: [intel/20.0.3]
+    projections:
+      all: '{name}/{version}/{compiler.name}-{compiler.version}'
+      ^mpi^cuda^plumed: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}-{^plumed.name}-{^cuda.name}'
+      ^mpi^plumed: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}-{^plumed.name}'
+      ^mpi^cuda: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}-{^cuda.name}'
+      ^mpi: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}'
+    spark:
+      environment:
+        prepend_path:
+          SPARK_HOME: /share/Apps/lusoft/opt/spack/linux-centos7-x86_64/gcc-8.1.0/spark/2.3.0-hixqyvg
+    ^python:
+      autoload: direct
+    verbose: false
+    whitelist: []
+    blacklist: []
+    
+
+

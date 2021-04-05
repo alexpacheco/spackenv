@@ -1,0 +1,119 @@
+packages:
+  gcc:
+    buildable: false
+    externals:
+    - spec: gcc@9.3.0
+      prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/gcc/9.3.0-vw54w6r
+  intel:
+    buildable: false
+    externals:
+    - spec: intel@18.0.1
+      prefix: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163
+    - spec: intel@19.0.3
+      prefix: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199
+    - spec: intel@20.0.3
+      prefix: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275
+  nvhpc:
+    buildable: false
+    externals:
+    - spec: nvhpc@20.9
+      prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/nvhpc/20.9-mawjgih
+    variants: ~blas ~lapack
+  cuda:
+    buildable: false
+    externals:
+    - spec: cuda@11.0.2
+      prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/cuda/11.0.2-zonqxcl
+    - spec: cuda@11.1.0
+      prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/cuda/11.1.0-tq24hzn
+    - spec: cuda@10.2.89
+      prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/cuda/10.2.89-twt23vo
+#  intel-mkl:
+#    buildable: false
+#    externals:
+#    - spec: intel-mkl@2020.3.279
+#      prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/intel-mkl/2020.3.279-km6kmrv
+#  intel-tbb:
+#    buildable: false
+#    externals:
+#    - spec: intel-tbb@2020.3
+#      prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/intel-tbb/2020.3-dagpfr2
+  slurm:
+    buildable: false
+    externals:
+    - spec: slurm@19-05-6-1
+      prefix: /usr/local/slurm-19.05.6
+  rdma-core:
+    buildable: false
+    externals:
+    - spec: rdma-core@20
+      prefix: /usr
+  mpich:
+    variants: +slurm
+    buildable: true
+  mvapich2:
+    variants: fabrics=mrail process_managers=hydra threads=single
+    buildable: true
+  openmpi:
+    variants: fabrics=auto +legacylaunchers ~thread_multiple ~vt +pmi schedulers=slurm
+    buildable: true
+  gromacs:
+    variants: ~hwloc
+    buildable: true
+  lammps:
+    variants: [+asphere+body+class2+colloid+compress+coreshell+dipole+exceptions~ffmpeg+granular~jpeg+kspace+latte+lib+manybody+mc+misc+molecule+mpi+mpiio+openmp+peri+png+poems~python+qeq+reax+replica+rigid+shock+snap+srd+user-atc+user-h5md+user-lb+user-misc+user-netcdf+user-omp+voronoi]
+    buildable: true
+  octave:
+    variants: [+arpack+curl+fftw~fltk+fontconfig+freetype+gl2ps+glpk+gnuplot+hdf5+jdk~llvm+magick+opengl+qhull+qrupdate+qscintilla+qt+readline+suitesparse+zlib]
+    buildable: true
+    providers: 
+      blas: [openblas]
+  r:
+    variants: [+X]
+  gnuplot:
+    variants: [+X, +cairo]
+  pango:
+    variants: [+X]
+  cairo:
+    variants: [+X, +gobject]
+  harfbuzz:
+    variants: [+graphite2]
+  hdf5:
+    variants: [+hl +cxx +fortran]
+  paml:
+    version: [4.9j]
+  paraview:
+    variants: ~python +python3 +plugins +qt
+  openblas:
+    variants: +ilp64
+  intel-mkl:
+    variants: +ilp64
+  llvm:
+    variants: +shared_libs
+  quantum-espresso:
+    variants: +epw
+  scotch:
+    variants: ~metis 
+  petsc:
+    variants: +batch
+  all:
+    compiler: [gcc@8.3.1, intel@20.0.3, pgi]
+    target: [x86_64]
+    providers:
+      awk: [gawk]
+      blas: [openblas, intel-mkl]
+      daal: [intel-daal]
+      elf: [elfutils]
+      golang: [gcc]
+      ipp: [intel-ipp]
+      java: [openjdk@1.8.0_202-b08]
+      jpeg: [libjpeg-turbo]
+      lapack: [intel-mkl, openblas]
+      mkl: [intel-mkl]
+      mpe: [mpe2]
+      mpi: [mpich, mvapich2, openmpi]
+      opencl: [pocl]
+      openfoam: [openfoam, foam-extend]
+      pil: [py-pillow]
+      scalapack: [netlib-scalapack]
+      tbb: [intel-tbb]

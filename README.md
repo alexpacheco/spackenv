@@ -24,6 +24,13 @@ spack install
 
 The directory `etc/lmod` contains the lmod configuration to switch between avx, avx2 and avx512 enabled `MODULEPATHS`
 
+### LU Software
+
+This spack installation provides the deployed site-software on Sol and Hawk.
+
+To reproduce this installation, you need to first copy the site configuration files from `lusoft/etc/spack` to your spack install tree. This assumes that SLURM and the compiler environment above is already installed. Edit the `packages.yaml` file to point to the location of slurm (/usr/local), rmda-core (/usr), gcc, intel, cuda, and nvhpc. The file `repo.yaml` is hardwired with  location of the lubio repository and should be changed to your location.
+
+On Sol, these files are available at `/share/Apps/lusoft/etc/spack`.
 
 
 

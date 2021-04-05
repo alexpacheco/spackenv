@@ -1,0 +1,340 @@
+compilers:
+- compiler:
+    spec: gcc@4.8.5
+    paths:
+      cc: /usr/bin/gcc
+      cxx: /usr/bin/g++
+      f77: /usr/bin/gfortran
+      fc: /usr/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@5.3.0
+    paths:
+      cc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/5.3.0-eao6gsl/bin/gcc
+      cxx: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/5.3.0-eao6gsl/bin/g++
+      f77: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/5.3.0-eao6gsl/bin/gfortran
+      fc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/5.3.0-eao6gsl/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@6.1.0
+    paths:
+      cc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/6.1.0-6s544hq/bin/gcc
+      cxx: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/6.1.0-6s544hq/bin/g++
+      f77: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/6.1.0-6s544hq/bin/gfortran
+      fc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/6.1.0-6s544hq/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@7.1.0
+    paths:
+      cc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/7.1.0-uc5kuqr/bin/gcc
+      cxx: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/7.1.0-uc5kuqr/bin/g++
+      f77: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/7.1.0-uc5kuqr/bin/gfortran
+      fc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/7.1.0-uc5kuqr/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@8.1.0
+    paths:
+      cc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/gcc
+      cxx: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/g++
+      f77: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/gfortran
+      fc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@9.1.0
+    paths:
+      cc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/9.1.0-j6seia3/bin/gcc
+      cxx: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/9.1.0-j6seia3/bin/g++
+      f77: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/9.1.0-j6seia3/bin/gfortran
+      fc: /share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/9.1.0-j6seia3/bin/gfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: intel@16.0.3
+    paths:
+      cc: /share/Apps/intel/2016/compilers_and_libraries_2016.3.210/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2016/compilers_and_libraries_2016.3.210/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2016/compilers_and_libraries_2016.3.210/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2016/compilers_and_libraries_2016.3.210/linux/bin/intel64/ifort
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules:
+      - intel/16.0.3
+    environment:
+      set:
+        INTEL_LICENSE_FILE: '/share/Apps/intel/licenses/server.lic'
+    extra_rpaths: []
+- compiler:
+    spec: intel@17.0.3
+    paths:
+      cc: /share/Apps/intel/compilers_and_libraries_2017.3.191/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/compilers_and_libraries_2017.3.191/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/compilers_and_libraries_2017.3.191/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/compilers_and_libraries_2017.3.191/linux/bin/intel64/ifort
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules:
+      - intel/17.0.3
+    environment:
+      set:
+        INTEL_LICENSE_FILE: '/share/Apps/intel/licenses/server.lic'
+    extra_rpaths: []
+- compiler:
+    spec: intel@18.0.1
+    paths:
+      cc: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+    flags:
+      cflags: -gcc-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/5.3.0-eao6gsl/bin/gcc
+      cxxflags: -gxx-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/5.3.0-eao6gsl/bin/g++
+      fflags: -gcc-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/5.3.0-eao6gsl/bin/gcc
+    operating_system: centos7
+    target: x86_64
+    modules:
+      - intel/18.0.1
+      - gcc/5.3.0/gcc-4.8.5
+    environment:
+      set:
+        INTEL_LICENSE_FILE: '/share/Apps/intel/licenses/server.lic'
+    extra_rpaths: []
+- compiler:
+    spec: intel@19.0.3.199
+    paths:
+      cc: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/ifort
+    flags:
+      cflags: -gcc-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/gcc
+      cxxflags: -gxx-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/g++
+      fflags: -gcc-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/gcc
+    operating_system: centos7
+    target: x86_64
+    modules:
+      - intel/19.0.3
+      - gcc/8.1.0/gcc-4.8.5
+    environment:
+      set:
+        INTEL_LICENSE_FILE: '/share/Apps/intel/licenses/server.lic'
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: intel@20.0.3
+    paths:
+      cc: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/ifort
+    flags:
+      cflags: -gcc-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/gcc
+      cxxflags: -gxx-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/g++
+      fflags: -gcc-name=/share/Apps/compilers/opt/spack/linux-centos7-x86_64/gcc-4.8.5/gcc/8.1.0-dc4tau6/bin/gcc
+    operating_system: centos7
+    target: x86_64
+    modules:
+      - intel/20.0.3
+      - gcc/8.1.0/gcc-4.8.5
+    environment:
+      set:
+        INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    extra_rpaths: []
+- compiler:
+    spec: pgi@16.5
+    paths:
+      cc: /share/Apps/pgi/linux86-64/16.5/bin/pgcc
+      cxx: /share/Apps/pgi/linux86-64/16.5/bin/pgc++
+      f77: /share/Apps/pgi/linux86-64/16.5/bin/pgfortran
+      fc: /share/Apps/pgi/linux86-64/16.5/bin/pgfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: [pgi/16.5]
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: pgi@17.4
+    paths:
+      cc: /share/Apps/pgi/linux86-64/17.4/bin/pgcc
+      cxx: /share/Apps/pgi/linux86-64/17.4/bin/pgc++
+      f77: /share/Apps/pgi/linux86-64/17.4/bin/pgfortran
+      fc: /share/Apps/pgi/linux86-64/17.4/bin/pgfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: [pgi/17.4]
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: pgi@18.3
+    paths:
+      cc: /share/Apps/pgi/linux86-64/18.3/bin/pgcc
+      cxx: /share/Apps/pgi/linux86-64/18.3/bin/pgc++
+      f77: /share/Apps/pgi/linux86-64/18.3/bin/pgfortran
+      fc: /share/Apps/pgi/linux86-64/18.3/bin/pgfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: [pgi/18.3]
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: pgi@19.1
+    paths:
+      cc: /share/Apps/pgi/linux86-64/19.1/bin/pgcc
+      cxx: /share/Apps/pgi/linux86-64/19.1/bin/pgc++
+      f77: /share/Apps/pgi/linux86-64/19.1/bin/pgfortran
+      fc: /share/Apps/pgi/linux86-64/19.1/bin/pgfortran
+    flags: {}
+    operating_system: centos7
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@8.3.1
+    paths:
+      cc: /usr/bin/gcc
+      cxx: /usr/bin/g++
+      f77: /usr/bin/gfortran
+      fc: /usr/bin/gfortran
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: gcc@9.3.0
+    paths:
+      cc: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/gcc/9.3.0-vw54w6r/bin/gcc
+      cxx: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/gcc/9.3.0-vw54w6r/bin/g++
+      f77: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/gcc/9.3.0-vw54w6r/bin/gfortran
+      fc: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/gcc/9.3.0-vw54w6r/bin/gfortran
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: intel@19.1.2.275
+    paths:
+      cc: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/ifort
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules:
+    - intel/19.1.2
+    environment:
+      set:
+        INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    extra_rpaths: []
+- compiler:
+    spec: intel@20.0.3
+    paths:
+      cc: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275/linux/bin/intel64/ifort
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules:
+    - intel/20.0.3
+    environment:
+      set:
+        INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    extra_rpaths: []
+- compiler:
+    spec: nvhpc@20.7
+    paths:
+      cc: /share/Apps/nvhpc_sdk/Linux_x86_64/20.7/compilers/bin/nvc
+      cxx: /share/Apps/nvhpc_sdk/Linux_x86_64/20.7/compilers/bin/nvc++
+      f77: /share/Apps/nvhpc_sdk/Linux_x86_64/20.7/compilers/bin/nvfortran
+      fc: /share/Apps/nvhpc_sdk/Linux_x86_64/20.7/compilers/bin/nvfortran
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules:
+    - nvhpc/20.7
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: nvhpc@20.9
+    paths:
+      cc: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/nvhpc/20.9-mawjgih/Linux_x86_64/20.9/compilers/bin/nvc
+      cxx: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/nvhpc/20.9-mawjgih/Linux_x86_64/20.9/compilers/bin/nvc++
+      f77: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/nvhpc/20.9-mawjgih/Linux_x86_64/20.9/compilers/bin/nvfortran
+      fc: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/nvhpc/20.9-mawjgih/Linux_x86_64/20.9/compilers/bin/nvfortran
+    flags:
+      cppflags: -fPIC
+    operating_system: centos8
+    target: x86_64
+    modules:
+    - nvhpc/20.9
+    environment: {}
+    extra_rpaths: []
+- compiler:
+    spec: intel@19.0.3
+    paths:
+      cc: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199/linux/bin/intel64/ifort
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules:
+    - intel/19.0.3
+    environment:
+      set:
+        INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
+    extra_rpaths: []
+- compiler:
+    spec: intel@18.0.1
+    paths:
+      cc: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc
+      cxx: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc
+      f77: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+      fc: /share/Apps/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort
+    flags: {}
+    operating_system: centos8
+    target: x86_64
+    modules: []
+    environment: {}
+    extra_rpaths: []
