@@ -8,5 +8,6 @@ config:
       all: ${ARCHITECTURE}/${COMPILERNAME}-${COMPILERVER}/${PACKAGE}/${VERSION}-${HASH:7}
 
   template_dirs:
-    - $spacl/etc/templates
+    - $spack/etc/templates
+    - $HOME/.spack/templates
 

@@ -104,6 +104,7 @@ packages:
       blas: [openblas, intel-mkl]
       daal: [intel-daal]
       elf: [elfutils]
+      fftw-api: [fftw]
       golang: [gcc]
       ipp: [intel-ipp]
       java: [openjdk@1.8.0_202-b08]
