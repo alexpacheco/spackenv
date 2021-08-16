@@ -7,6 +7,11 @@ modules:
     hash_length: 0
     verbose: false
     blacklist_implicits: true
+    projections:
+      intel-oneapi-compilers@2021.3.0: oneapi/2021.3.0
+      intel-oneapi-mkl@2021.3.0: oneapi-mkl/2021.3.0
+      intel-oneapi-mpi@2021.3.0: oneapi-mpi/2021.3.0
+      intel-oneapi-tbb@2021.3.0: oneapi-tbb/2021.3.0
     intel:
       environment:
         set:
@@ -25,18 +30,18 @@ modules:
       environment:
         set:
           INTEL_LICENSE_FILE: /share/Apps/intel/licenses/server.lic
-    r@4.0.3 target=ivybridge:
-      environment:
-        set:
-          R_LIBS_SITE: /share/Apps/R/packages/r-avx/4.0
-    r@4.0.3 target=haswell:
-      environment:
-        set:
-          R_LIBS_SITE: /share/Apps/R/packages/r-avx2/4.0
-    r@4.0.3 target=skylake_avx512:
-      environment:
-        set:
-          R_LIBS_SITE: /share/Apps/R/packages/r-avx512/4.0
+#    r@4.0.3 target=ivybridge:
+#      environment:
+#        set:
+#          R_LIBS_SITE: /share/Apps/R/packages/r-avx/4.0
+#    r@4.0.3 target=haswell:
+#      environment:
+#        set:
+#          R_LIBS_SITE: /share/Apps/R/packages/r-avx2/4.0
+#    r@4.0.3 target=skylake_avx512:
+#      environment:
+#        set:
+#          R_LIBS_SITE: /share/Apps/R/packages/r-avx512/4.0
     r%gcc:
       template: 'rproject.lua'
     mpich%intel@19.0.3:
@@ -53,6 +58,8 @@ modules:
       template: 'intel20.lua'
     openmolcas:
       template: 'molcas.lua'
+    oneapi:
+      template: 'oneapi.lua'
     anaconda3:
       environment:
         set:
@@ -60,16 +67,27 @@ modules:
       template: 'anaconda.lua'
     python:
       template: 'python.lua'
+    vmd:
+      environment:
+        set:
+          LD_LIBRARY_PATH: /share/Apps/lusoft/opt/spack/linux-centos8-x86_64/gcc-8.3.1/mesa/20.2.1-denigxf/lib
     hierarchy:
     - mpi
     core_specs:
     - gcc@8.3.1
     whitelist: []
     blacklist: []
+    py-tensorflow:
+      suffixes:
+        ^cuda: cuda
+      template: 'scratch.lua'
     all:
       conflict: []
       load: []
       autoload: 'direct'
+      environment:
+        set:
+          'LURC_{name}_DIR': '{prefix}'
       filter:
         environment_blacklist: ['CPATH', 'LIBRARY_PATH']
       suffixes:
@@ -80,7 +98,7 @@ modules:
   tcl:
     hash_length: 7
     naming_scheme: ${PACKAGE}/${VERSION}/${COMPILERNAME}-${COMPILERVER}
-    blacklist_implicits: true
+    blacklist_implicits: false
     all:
       conflict:
         - ${PACKAGE}
@@ -125,6 +143,7 @@ modules:
       ^mpi^cuda^plumed: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}-{^plumed.name}-{^cuda.name}'
       ^mpi^plumed: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}-{^plumed.name}'
       ^mpi^cuda: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}-{^cuda.name}'
+      ^cuda: '{name}/{version}/{compiler.name}-{compiler.version}-{^cuda.name}'
       ^mpi: '{name}/{version}/{compiler.name}-{compiler.version}-{^mpi.name}-{^mpi.version}'
     spark:
       environment:

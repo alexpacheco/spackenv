@@ -32,5 +32,17 @@ if (myShellType() == "sh") then
 end
 -- Add modulepath for locally installed packages
 append_path("MODULEPATH","/share/Apps/share/Modules/lmod/linux-centos8-x86_64/py_venv/{{spec.version}}")
+-- Add local and cephfs scratch for all installed packages
+local cephscratch=pathJoin("/share/ceph/scratch/",os.getenv('USER'),"/",os.getenv('SLURM_JOB_ID')) or pathJoin(os.getenv('HOME'),"/JOB_TMPDIR")
+local tmpscratch=pathJoin("/scratch/",os.getenv('USER'),"/",os.getenv('SLURM_JOB_ID')) or pathJoin(os.getenv('HOME'),"/JOB_TMPDIR")
+--- Setup CEPH SCRATCH and LOCAL SCRATCH
+setenv("LOCAL_SCRATCH",tmpscratch)
+setenv("CEPHFS_SCRATCH",cephscratch)
+if os.getenv('SLURM_JOB_ID') == nil then
+  setenv("TMPDIR",pathJoin(os.getenv('HOME'),"/JOB_TMPDIR"))
+else
+  setenv("TMPDIR",cephscratch)
+end
+
 {% endblock %}
 

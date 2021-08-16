@@ -1,2 +1,3 @@
 repos:
+- /share/Apps/lusoft/var/spack/repos/builtin
 - /share/Apps/bioinformatics/var/spack/repos/lubio

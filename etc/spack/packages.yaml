@@ -13,6 +13,11 @@ packages:
       prefix: /share/Apps/intel/2019/compilers_and_libraries_2019.3.199
     - spec: intel@20.0.3
       prefix: /share/Apps/intel/2020/compilers_and_libraries_2020.3.275
+  intel-oneapi-compilers:
+    buildable: false
+    externals:
+    - spec: intel-oneapi-compilers@2021.3.0
+      prefix: /share/Apps/intel-oneapi/2021
   nvhpc:
     buildable: false
     externals:
@@ -28,6 +33,21 @@ packages:
       prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/cuda/11.1.0-tq24hzn
     - spec: cuda@10.2.89
       prefix: /share/Apps/compilers/opt/spack/linux-centos8-x86_64/gcc-8.3.1/cuda/10.2.89-twt23vo
+  intel-oneapi-mkl:
+    buildable: false
+    externals:
+    - spec: intel-oneapi-mkl@2021.3.0
+      prefix: /share/Apps/intel-oneapi/2021
+  intel-oneapi-tbb:
+    buildable: false
+    externals:
+    - spec: intel-oneapi-tbb@2021.3.0
+      prefix: /share/Apps/intel-oneapi/2021
+  intel-oneapi-mpi:
+    buildable: false
+    externals:
+    - spec: intel-oneapi-mpi@2021.3.0
+      prefix: /share/Apps/intel-oneapi/2021
 #  intel-mkl:
 #    buildable: false
 #    externals:
@@ -61,7 +81,8 @@ packages:
     variants: ~hwloc
     buildable: true
   lammps:
-    variants: [+asphere+body+class2+colloid+compress+coreshell+dipole+exceptions~ffmpeg+granular~jpeg+kspace+latte+lib+manybody+mc+misc+molecule+mpi+mpiio+openmp+peri+png+poems~python+qeq+reax+replica+rigid+shock+snap+srd+user-atc+user-h5md+user-lb+user-misc+user-netcdf+user-omp+voronoi]
+    variants: [+asphere+body+class2+colloid+compress+coreshell+dipole+exceptions~ffmpeg+granular~jpeg+kspace+latte+lib+manybody+mc+misc+molecule+mpi+mpiio+openmp+opt+peri+png+poems~python+qeq+reax+replica+rigid+shock+snap+srd+user-atc+user-h5md+user-lb+user-meamc+user-misc+user-netcdf+user-omp+user-reaxc+voronoi]
+#    variants: [asphere+body+class2+colloid+compress+coreshell+dipole+exceptions~ffmpeg+granular~jpeg+kspace+latte+lib+manybody+mc+misc+molecule+mpi+mpiio+openmp+peri+png+poems~python+qeq+reax+replica+rigid+shock+snap+srd+user-atc+user-colvars+user-h5md+user-lb+user-meamc+user-misc+user-netcdf+user-omp+user-reaxc+voronoi]
     buildable: true
   octave:
     variants: [+arpack+curl+fftw~fltk+fontconfig+freetype+gl2ps+glpk+gnuplot+hdf5+jdk~llvm+magick+opengl+qhull+qrupdate+qscintilla+qt+readline+suitesparse+zlib]

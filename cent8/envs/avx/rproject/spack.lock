@@ -207,6 +207,10 @@
   {
    "hash": "24fhxgkl5vx6vnjl7euewq52nmj7nlca",
    "spec": "r-rhdf5@2.28.1%gcc@8.3.1 ^openblas@0.3.10"
+  },
+  {
+   "hash": "uixutyzqc2xwiu6ylcdtshu7d3w5myjj",
+   "spec": "r-irkernel%gcc@8.3.1 ^openblas@0.3.10"
   }
  ],
  "concrete_specs": {
@@ -37623,6 +37627,485 @@
      }
     },
     "hash": "s3gaiftrh4c5gh2gkomyofvl4ii4fgla"
+   }
+  },
+  "uixutyzqc2xwiu6ylcdtshu7d3w5myjj": {
+   "r-irkernel": {
+    "version": "master",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "centos8",
+     "target": {
+      "name": "ivybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "f16c",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "rdrand",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "sandybridge"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "r": {
+      "hash": "enuiskyj7t2fucxbhibtrjpgymw42i3c",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     },
+     "r-crayon": {
+      "hash": "ti7ha3pg5wmerz74h65uclqs3o7ykzki",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-devtools": {
+      "hash": "coalhagawtn6aczq7ndlovrp5ewlrvv6",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-digest": {
+      "hash": "btfcd27fzo7bnkyeddv7jto5hdsxtyau",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-evaluate": {
+      "hash": "xoxn2vhuisgryijmzxztk55s2qynn6lf",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-irdisplay": {
+      "hash": "n56f26xb5q33kksyzxxtrxxtvjcu7ttj",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-pbdzmq": {
+      "hash": "klh6szpmuh3hkvozw6mfs3aa4octra4e",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-repr": {
+      "hash": "dvfc4ocxtvw24ueekodbb2a6unaoo4yy",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-uuid": {
+      "hash": "podexs3m3ysiakt7ppjbdchpbg2def4w",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "ivzj5jfxn65tzul2j6nvnuqgsnj75dvi"
+   }
+  },
+  "n56f26xb5q33kksyzxxtrxxtvjcu7ttj": {
+   "r-irdisplay": {
+    "version": "0.7.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "centos8",
+     "target": {
+      "name": "ivybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "f16c",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "rdrand",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "sandybridge"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "r": {
+      "hash": "enuiskyj7t2fucxbhibtrjpgymw42i3c",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     },
+     "r-repr": {
+      "hash": "dvfc4ocxtvw24ueekodbb2a6unaoo4yy",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "nhn4ine72obhehdzmglu5rkucxk3b6ly"
+   }
+  },
+  "dvfc4ocxtvw24ueekodbb2a6unaoo4yy": {
+   "r-repr": {
+    "version": "1.0.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "centos8",
+     "target": {
+      "name": "ivybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "f16c",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "rdrand",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "sandybridge"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "r": {
+      "hash": "enuiskyj7t2fucxbhibtrjpgymw42i3c",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     },
+     "r-base64enc": {
+      "hash": "xhxackccthvs4yckm3u47au6ta7r7k3a",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-htmltools": {
+      "hash": "ydawtipc7qdfrxolgheez6go4n5npek4",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-jsonlite": {
+      "hash": "ajoq5uzfcup5mpc6oza3wqodqkm5iywy",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "r-pillar": {
+      "hash": "3zlvcg45ponrl3y6vs26uznghto76gbm",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "yhlpxjli5dzu6sdkfuydhpkzruir4fki"
+   }
+  },
+  "klh6szpmuh3hkvozw6mfs3aa4octra4e": {
+   "r-pbdzmq": {
+    "version": "0.3-3",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "centos8",
+     "target": {
+      "name": "ivybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "f16c",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "rdrand",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "sandybridge"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "libzmq": {
+      "hash": "2ihlrb637h6ymoypwt7tgzxfltevpzlg",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "r": {
+      "hash": "enuiskyj7t2fucxbhibtrjpgymw42i3c",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "mq32kai2y4b632y4gmeiil3nr3hnazbf"
+   }
+  },
+  "2ihlrb637h6ymoypwt7tgzxfltevpzlg": {
+   "libzmq": {
+    "version": "4.3.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "centos8",
+     "target": {
+      "name": "ivybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "f16c",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "rdrand",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "sandybridge"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "libsodium": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "libsodium": {
+      "hash": "4n6kkd6l6lkbkyu3ord6bhwlgjt7h754",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "pkgconf": {
+      "hash": "ptr7r33wc4yfmfxnwaex4mvprz62nnh7",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "sv2n7duevr7ji7tr2kh2mmcc6uugulge"
+   }
+  },
+  "4n6kkd6l6lkbkyu3ord6bhwlgjt7h754": {
+   "libsodium": {
+    "version": "1.0.18",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "centos8",
+     "target": {
+      "name": "ivybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "f16c",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "rdrand",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "sandybridge"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "4n6kkd6l6lkbkyu3ord6bhwlgjt7h754"
+   }
+  },
+  "podexs3m3ysiakt7ppjbdchpbg2def4w": {
+   "r-uuid": {
+    "version": "0.1-2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "centos8",
+     "target": {
+      "name": "ivybridge",
+      "vendor": "GenuineIntel",
+      "features": [
+       "aes",
+       "avx",
+       "f16c",
+       "mmx",
+       "pclmulqdq",
+       "popcnt",
+       "rdrand",
+       "sse",
+       "sse2",
+       "sse4_1",
+       "sse4_2",
+       "ssse3"
+      ],
+      "generation": 0,
+      "parents": [
+       "sandybridge"
+      ]
+     }
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "8.3.1"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "r": {
+      "hash": "enuiskyj7t2fucxbhibtrjpgymw42i3c",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "rbzdybs5trjwimtrjbzf2apm3uj2dwf6"
    }
   }
  }

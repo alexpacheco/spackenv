@@ -23,8 +23,8 @@ help([[
 --end
 
 local base = pathJoin("/share/Apps/", myModuleName(), version, toolchain)
-local cephscratch=pathJoin("/share/ceph/scratch/",os.getenv('USER'),"/",os.getenv('SLURM_JOB_ID')) or "/tmp"
-local tmpscratch=pathJoin("/scratch/",os.getenv('USER'),"/",os.getenv('SLURM_JOB_ID')) or "/tmp"
+local cephscratch=pathJoin("/share/ceph/scratch/",os.getenv('USER'),"/",os.getenv('SLURM_JOB_ID')) or pathJoin(os.getenv('HOME'),"/JOB_TMPDIR")
+local tmpscratch=pathJoin("/scratch/",os.getenv('USER'),"/",os.getenv('SLURM_JOB_ID')) or pathJoin(os.getenv('HOME'),"/JOB_TMPDIR")
 
 prepend_path("PATH",pathJoin(base,"bin"))
 prepend_path("LD_LIBRARY_PATH",pathJoin(base,"lib"))
@@ -34,7 +34,13 @@ prepend_path("MANPATH",pathJoin(base,"share/man"))
 
 --- Setup CEPH SCRATCH and LOCAL SCRATCH
 -- setenv("SCRATCH",tmpscratch)
-setenv("SCRATCH",cephscratch)
+setenv("LOCAL_SCRATCH",tmpscratch)
+setenv("CEPHFS_SCRATCH",cephscratch)
+if os.getenv('SLURM_JOB_ID') == nil then
+  setenv("TMPDIR",pathJoin(os.getenv('HOME'),"/JOB_TMPDIR"))
+else
+  setenv("TMPDIR",cephscratch)
+end
 
 --- For Conda Environments
 execute{cmd="conda activate {{env.name}}",modeA={"load"}}

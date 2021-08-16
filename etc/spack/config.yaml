@@ -1,5 +1,5 @@
 config:
-  build_jobs: 2
+  build_jobs: 4
   build_stage:
   - $spack/var/spack/stage
 
@@ -8,6 +8,8 @@ config:
       all: ${ARCHITECTURE}/${COMPILERNAME}-${COMPILERVER}/${PACKAGE}/${VERSION}-${HASH:7}
 
   template_dirs:
+    - /share/Apps/spackenv/etc/templates
     - $spack/etc/templates
     - $HOME/.spack/templates
+
 
