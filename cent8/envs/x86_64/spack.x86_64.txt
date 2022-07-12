@@ -174,23 +174,23 @@
 [+]  skyh7wo                          ^pkgconf@1.7.3%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  oar6qjs      ^automake@1.16.2%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  xbesyg2      ^flex@2.6.4%gcc@8.3.1+lex patches=09c22e5c6fef327d3e48eb23f0d610dcd3a35ab9207f12e0f875701c677978d3 arch=linux-centos8-x86_64
-[+]  rt2b4tj          ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   rt2b4tj          ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  2mbqx2e              ^diffutils@3.7%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  6qf7jjk                  ^libiconv@1.16%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  ne4655k              ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ne4655k              ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  yhf26ux                  ^gettext@0.21%gcc@8.3.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos8-x86_64
 [+]  qfyiaxu                      ^bzip2@1.0.8%gcc@8.3.1+shared arch=linux-centos8-x86_64
 [+]  oojs5h5                      ^libxml2@2.9.10%gcc@8.3.1~python arch=linux-centos8-x86_64
 [+]  avnmade                          ^xz@5.2.5%gcc@8.3.1~pic arch=linux-centos8-x86_64
 [+]  44hiv3t                          ^zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-x86_64
 [+]  6jvu6ah                      ^tar@1.32%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  uty7czw          ^findutils@4.6.0%gcc@8.3.1 patches=84b916c0bf8c51b7e7b28417692f0ad3e7030d1f3c248ba77c42ede5c1c5d11e,bd9e4e5cc280f9753ae14956c4e4aa17fe7a210f55dd6c84aa60b12d106d47a2 arch=linux-centos8-x86_64
+ -   uty7czw          ^findutils@4.6.0%gcc@8.3.1 patches=84b916c0bf8c51b7e7b28417692f0ad3e7030d1f3c248ba77c42ede5c1c5d11e,bd9e4e5cc280f9753ae14956c4e4aa17fe7a210f55dd6c84aa60b12d106d47a2 arch=linux-centos8-x86_64
 [+]  kdgb7ni              ^libtool@2.4.6%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  bu3nkau              ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
+ -   bu3nkau              ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
 [+]  hgswww2      ^libjpeg-turbo@2.0.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  qjyx4kn          ^cmake@3.18.4%gcc@8.3.1~doc+ncurses+openssl+ownlibs~qt patches=bf695e3febb222da2ed94b3beea600650e4318975da90e4a71d6f31a6d5d8c3d arch=linux-centos8-x86_64
 [+]  7qfntwq              ^openssl@1.1.1h%gcc@8.3.1+systemcerts arch=linux-centos8-x86_64
-[+]  ihezmt5          ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ihezmt5          ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  z45v56y      ^libx11@1.6.7%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  mdzcopy          ^inputproto@2.3.2%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  t7qrdlf              ^util-macros@1.19.1%gcc@8.3.1 arch=linux-centos8-x86_64
@@ -391,7 +391,7 @@
 [+]  hp4mbgr                  ^perl@5.32.0%gcc@8.3.1+cpanm+shared+threads arch=linux-centos8-x86_64
 [+]  afbhozy                      ^berkeley-db@18.1.40%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  mpxxq2p              ^sqlite@3.33.0%gcc@8.3.1+column_metadata+fts~functions~rtree arch=linux-centos8-x86_64
-[+]  bu3nkau          ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
+ -   bu3nkau          ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
 [+]  d2jaxqw      ^lesstif@0.95.2%gcc@8.3.1+shared~static arch=linux-centos8-x86_64
 [+]  3xcwfvv          ^libice@1.0.9%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  t7qrdlf              ^util-macros@1.19.1%gcc@8.3.1 arch=linux-centos8-x86_64
@@ -422,10 +422,10 @@
 [+]  tkkmvux                      ^ncurses@6.2%gcc@8.3.1~symlinks+termlib arch=linux-centos8-x86_64
 [+]  skyh7wo                          ^pkgconf@1.7.3%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  oar6qjs      ^automake@1.16.2%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  rt2b4tj      ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   rt2b4tj      ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  2mbqx2e          ^diffutils@3.7%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  6qf7jjk              ^libiconv@1.16%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  ne4655k          ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ne4655k          ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  yhf26ux              ^gettext@0.21%gcc@8.3.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos8-x86_64
 [+]  qfyiaxu                  ^bzip2@1.0.8%gcc@8.3.1+shared arch=linux-centos8-x86_64
 [+]  oojs5h5                  ^libxml2@2.9.10%gcc@8.3.1~python arch=linux-centos8-x86_64
@@ -433,9 +433,9 @@
 [+]  44hiv3t                      ^zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-x86_64
 [+]  6jvu6ah                  ^tar@1.32%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  xbesyg2      ^flex@2.6.4%gcc@8.3.1+lex patches=09c22e5c6fef327d3e48eb23f0d610dcd3a35ab9207f12e0f875701c677978d3 arch=linux-centos8-x86_64
-[+]  uty7czw          ^findutils@4.6.0%gcc@8.3.1 patches=84b916c0bf8c51b7e7b28417692f0ad3e7030d1f3c248ba77c42ede5c1c5d11e,bd9e4e5cc280f9753ae14956c4e4aa17fe7a210f55dd6c84aa60b12d106d47a2 arch=linux-centos8-x86_64
+ -   uty7czw          ^findutils@4.6.0%gcc@8.3.1 patches=84b916c0bf8c51b7e7b28417692f0ad3e7030d1f3c248ba77c42ede5c1c5d11e,bd9e4e5cc280f9753ae14956c4e4aa17fe7a210f55dd6c84aa60b12d106d47a2 arch=linux-centos8-x86_64
 [+]  kdgb7ni              ^libtool@2.4.6%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  bu3nkau              ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
+ -   bu3nkau              ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
 [+]  dzyq6rk      ^ghostscript@9.50%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  2sotqdy          ^freetype@2.10.1%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  rvsm7w6              ^libpng@1.6.37%gcc@8.3.1 arch=linux-centos8-x86_64
@@ -495,7 +495,7 @@
 [+]  2iezlxw                      ^docbook-xml@4.5%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  hgswww2                  ^libjpeg-turbo@2.0.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  qjyx4kn                      ^cmake@3.18.4%gcc@8.3.1~doc+ncurses+openssl+ownlibs~qt patches=bf695e3febb222da2ed94b3beea600650e4318975da90e4a71d6f31a6d5d8c3d arch=linux-centos8-x86_64
-[+]  ihezmt5                      ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ihezmt5                      ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  z5iz6x5                  ^libtiff@4.1.0%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  jjnwpn4                  ^libxslt@1.1.33%gcc@8.3.1+crypto~python arch=linux-centos8-x86_64
 [+]  5bhjghd                      ^libgcrypt@1.8.5%gcc@8.3.1 arch=linux-centos8-x86_64
@@ -570,10 +570,10 @@
 [+]  tkkmvux                          ^ncurses@6.2%gcc@8.3.1~symlinks+termlib arch=linux-centos8-x86_64
 [+]  skyh7wo                              ^pkgconf@1.7.3%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  oar6qjs          ^automake@1.16.2%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  rt2b4tj          ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   rt2b4tj          ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  2mbqx2e              ^diffutils@3.7%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  6qf7jjk                  ^libiconv@1.16%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  ne4655k              ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ne4655k              ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  yhf26ux                  ^gettext@0.21%gcc@8.3.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos8-x86_64
 [+]  qfyiaxu                      ^bzip2@1.0.8%gcc@8.3.1+shared arch=linux-centos8-x86_64
 [+]  oojs5h5                      ^libxml2@2.9.10%gcc@8.3.1~python arch=linux-centos8-x86_64
@@ -581,9 +581,9 @@
 [+]  44hiv3t                          ^zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-x86_64
 [+]  6jvu6ah                      ^tar@1.32%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  xbesyg2          ^flex@2.6.4%gcc@8.3.1+lex patches=09c22e5c6fef327d3e48eb23f0d610dcd3a35ab9207f12e0f875701c677978d3 arch=linux-centos8-x86_64
-[+]  uty7czw              ^findutils@4.6.0%gcc@8.3.1 patches=84b916c0bf8c51b7e7b28417692f0ad3e7030d1f3c248ba77c42ede5c1c5d11e,bd9e4e5cc280f9753ae14956c4e4aa17fe7a210f55dd6c84aa60b12d106d47a2 arch=linux-centos8-x86_64
+ -   uty7czw              ^findutils@4.6.0%gcc@8.3.1 patches=84b916c0bf8c51b7e7b28417692f0ad3e7030d1f3c248ba77c42ede5c1c5d11e,bd9e4e5cc280f9753ae14956c4e4aa17fe7a210f55dd6c84aa60b12d106d47a2 arch=linux-centos8-x86_64
 [+]  kdgb7ni                  ^libtool@2.4.6%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  bu3nkau                  ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
+ -   bu3nkau                  ^texinfo@6.5%gcc@8.3.1 patches=12f6edb0c6b270b8c8dba2ce17998c580db01182d871ee32b7b6e4129bd1d23a,1732115f651cff98989cb0215d8f64da5e0f7911ebf0c13b064920f088f2ffe1 arch=linux-centos8-x86_64
 [+]  dzyq6rk          ^ghostscript@9.50%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  2sotqdy              ^freetype@2.10.1%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  rvsm7w6                  ^libpng@1.6.37%gcc@8.3.1 arch=linux-centos8-x86_64
@@ -643,7 +643,7 @@
 [+]  2iezlxw                          ^docbook-xml@4.5%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  hgswww2                      ^libjpeg-turbo@2.0.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  qjyx4kn                          ^cmake@3.18.4%gcc@8.3.1~doc+ncurses+openssl+ownlibs~qt patches=bf695e3febb222da2ed94b3beea600650e4318975da90e4a71d6f31a6d5d8c3d arch=linux-centos8-x86_64
-[+]  ihezmt5                          ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ihezmt5                          ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  z5iz6x5                      ^libtiff@4.1.0%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  jjnwpn4                      ^libxslt@1.1.33%gcc@8.3.1+crypto~python arch=linux-centos8-x86_64
 [+]  5bhjghd                          ^libgcrypt@1.8.5%gcc@8.3.1 arch=linux-centos8-x86_64
@@ -720,10 +720,10 @@
 
 ==> Concretized krb5@1.18.2%gcc@8.3.1 arch=linux-None-x86_64
 [+]  ryaqwwo  krb5@1.18.2%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  rt2b4tj      ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   rt2b4tj      ^bison@3.6.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  2mbqx2e          ^diffutils@3.7%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  6qf7jjk              ^libiconv@1.16%gcc@8.3.1 arch=linux-centos8-x86_64
-[+]  ne4655k          ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ne4655k          ^help2man@1.47.11%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  yhf26ux              ^gettext@0.21%gcc@8.3.1+bzip2+curses+git~libunistring+libxml2+tar+xz arch=linux-centos8-x86_64
 [+]  qfyiaxu                  ^bzip2@1.0.8%gcc@8.3.1+shared arch=linux-centos8-x86_64
 [+]  oojs5h5                  ^libxml2@2.9.10%gcc@8.3.1~python arch=linux-centos8-x86_64
@@ -762,10 +762,101 @@
 [+]  hgswww2      ^libjpeg-turbo@2.0.4%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  qjyx4kn          ^cmake@3.18.4%gcc@8.3.1~doc+ncurses+openssl+ownlibs~qt patches=bf695e3febb222da2ed94b3beea600650e4318975da90e4a71d6f31a6d5d8c3d arch=linux-centos8-x86_64
 [+]  7qfntwq              ^openssl@1.1.1h%gcc@8.3.1+systemcerts arch=linux-centos8-x86_64
-[+]  ihezmt5          ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
+ -   ihezmt5          ^nasm@2.15.05%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  rvsm7w6      ^libpng@1.6.37%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  z5iz6x5      ^libtiff@4.1.0%gcc@8.3.1 arch=linux-centos8-x86_64
 [+]  avnmade          ^xz@5.2.5%gcc@8.3.1~pic arch=linux-centos8-x86_64
 [+]  ntkzstn      ^openexr@2.3.0%gcc@8.3.1~debug arch=linux-centos8-x86_64
 [+]  d4tlexr          ^ilmbase@2.3.0%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized openjdk@11.0.2%gcc@8.3.1 arch=linux-None-x86_64
+[+]  ggtljql  openjdk@11.0.2%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized openjdk@1.8.0_222-b10%gcc@8.3.1 arch=linux-None-x86_64
+[+]  ui6ldtk  openjdk@1.8.0_222-b10%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized hadoop@3.3.1%gcc@8.3.1 arch=linux-None-x86_64 ^openjdk@11.0.2
+[+]  yyntwx7  hadoop@3.3.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  ggtljql      ^openjdk@11.0.2%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized spark@3.2.0%gcc@8.3.1+hadoop arch=linux-None-x86_64 ^hadoop@3.3.1 ^openjdk@11.0.2
+[+]  xpdy6ov  spark@3.2.0%gcc@8.3.1+hadoop arch=linux-centos8-x86_64
+[+]  yyntwx7      ^hadoop@3.3.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  ggtljql          ^openjdk@11.0.2%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized hive@3.1.2%gcc@8.3.1 arch=linux-None-x86_64 ^hadoop@3.3.1 ^openjdk@11.0.2
+[+]  ph7b3f6  hive@3.1.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  yyntwx7      ^hadoop@3.3.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  ggtljql          ^openjdk@11.0.2%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized hadoop@2.10.1%gcc@8.3.1 arch=linux-None-x86_64 ^openjdk@1.8.0_222-b10
+[+]  t3oup7w  hadoop@2.10.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  ui6ldtk      ^openjdk@1.8.0_222-b10%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized openssl@1.1.1h%gcc@8.3.1 arch=linux-None-x86_64
+[+]  7qfntwq  openssl@1.1.1h%gcc@8.3.1+systemcerts arch=linux-centos8-x86_64
+[+]  hp4mbgr      ^perl@5.32.0%gcc@8.3.1+cpanm+shared+threads arch=linux-centos8-x86_64
+[+]  afbhozy          ^berkeley-db@18.1.40%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  gblwtvg          ^gdbm@1.18.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  zaegaa2              ^readline@8.0%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  tkkmvux                  ^ncurses@6.2%gcc@8.3.1~symlinks+termlib arch=linux-centos8-x86_64
+[+]  skyh7wo                      ^pkgconf@1.7.3%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  44hiv3t      ^zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-x86_64
+
+==> Concretized xcrysden@1.6.2%gcc@8.3.1 arch=linux-None-x86_64
+[+]  3p4lths  xcrysden@1.6.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  7qjprvh      ^fftw@3.3.8%gcc@8.3.1~mpi~openmp~pfft_patches precision=double,float arch=linux-centos8-x86_64
+[+]  a6zri5r      ^tcl@8.6.10%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  44hiv3t          ^zlib@1.2.11%gcc@8.3.1+optimize+pic+shared arch=linux-centos8-x86_64
+[+]  3utga5a      ^tk@8.6.10%gcc@8.3.1+xft+xss arch=linux-centos8-x86_64
+[+]  z45v56y          ^libx11@1.6.7%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  mdzcopy              ^inputproto@2.3.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  skyh7wo                  ^pkgconf@1.7.3%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  t7qrdlf                  ^util-macros@1.19.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  6i666u3              ^kbproto@1.0.7%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  ssbwvit              ^libxcb@1.13%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  gegoawy                  ^libpthread-stubs@0.4%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  bcexyim                  ^libxau@1.0.8%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  mssmhei                      ^xproto@7.0.31%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  u4knvwg                  ^libxdmcp@1.1.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  r64meds                      ^libbsd@0.10.0%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  7vdwbju                  ^xcb-proto@1.13%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  hp4mbgr              ^perl@5.32.0%gcc@8.3.1+cpanm+shared+threads arch=linux-centos8-x86_64
+[+]  afbhozy                  ^berkeley-db@18.1.40%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  gblwtvg                  ^gdbm@1.18.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  zaegaa2                      ^readline@8.0%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  tkkmvux                          ^ncurses@6.2%gcc@8.3.1~symlinks+termlib arch=linux-centos8-x86_64
+[+]  mzrq3p2              ^xextproto@7.3.0%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  zjp4cui              ^xtrans@1.3.5%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  6tb4ojb          ^libxft@2.3.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  th7yjhl              ^fontconfig@2.13.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  ky2p44d                  ^font-util@1.3.2%gcc@8.3.1 fonts=encodings,font-adobe-100dpi,font-adobe-75dpi,font-adobe-utopia-100dpi,font-adobe-utopia-75dpi,font-adobe-utopia-type1,font-alias,font-arabic-misc,font-bh-100dpi,font-bh-75dpi,font-bh-lucidatypewriter-100dpi,font-bh-lucidatypewriter-75dpi,font-bh-ttf,font-bh-type1,font-bitstream-100dpi,font-bitstream-75dpi,font-bitstream-speedo,font-bitstream-type1,font-cronyx-cyrillic,font-cursor-misc,font-daewoo-misc,font-dec-misc,font-ibm-type1,font-isas-misc,font-jis-misc,font-micro-misc,font-misc-cyrillic,font-misc-ethiopic,font-misc-meltho,font-misc-misc,font-mutt-misc,font-schumacher-misc,font-screen-cyrillic,font-sun-misc,font-winitzki-cyrillic,font-xfree86-type1 arch=linux-centos8-x86_64
+[+]  wamdldj                      ^autoconf@2.69%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  hmlgdck                          ^m4@1.4.18%gcc@8.3.1+sigsegv patches=3877ab548f88597ab2327a2230ee048d2d07ace1062efe81fc92e91b7f39cd00,fc9b61654a3ba1a8d6cd78ce087e7c96366c290bc8d2c299f09828d793b853c8 arch=linux-centos8-x86_64
+[+]  cpkmoiz                              ^libsigsegv@2.12%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  oar6qjs                      ^automake@1.16.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  tut4guu                      ^bdftopcf@1.0.5%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  4gb5kt6                          ^fontsproto@2.1.3%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  3wi4rru                          ^libxfont@1.5.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  2sotqdy                              ^freetype@2.10.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  qfyiaxu                                  ^bzip2@1.0.8%gcc@8.3.1+shared arch=linux-centos8-x86_64
+[+]  2mbqx2e                                      ^diffutils@3.7%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  6qf7jjk                                          ^libiconv@1.16%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  rvsm7w6                                  ^libpng@1.6.37%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  lq3yatu                              ^libfontenc@1.1.3%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  bno3vo3                      ^mkfontdir@1.0.7%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  idtxxoh                          ^mkfontscale@1.1.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  n377z6r                  ^gperf@3.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  l3ar2xk                  ^libuuid@1.0.3%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  oojs5h5                  ^libxml2@2.9.10%gcc@8.3.1~python arch=linux-centos8-x86_64
+[+]  avnmade                      ^xz@5.2.5%gcc@8.3.1~pic arch=linux-centos8-x86_64
+[+]  a5brhxs              ^libxrender@0.9.10%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  xlpo4yg                  ^renderproto@0.11.1%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  wqp6uiu          ^libxscrnsaver@1.2.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  3x534pi              ^libxext@1.3.3%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  jaweyxu              ^scrnsaverproto@1.2.2%gcc@8.3.1 arch=linux-centos8-x86_64
+[+]  3fnizqk      ^togl@2.0-8.4%gcc@8.3.1 arch=linux-centos8-x86_64
+
+==> Concretized dmtcp@2.6.0%gcc@8.3.1 arch=linux-None-x86_64
+[+]  snmdbks  dmtcp@2.6.0%gcc@8.3.1 arch=linux-centos8-x86_64
 
